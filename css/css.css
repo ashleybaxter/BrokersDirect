@@ -1,0 +1,682 @@
+/*-----------------------------------------------------------------------
+Brokers Direct Style Sheet (http://www.brokersdirect.net)
+
+version:	1.0
+date:		17th August 2009 (Responsified 10th October 2012)
+author:		Sam Brown
+email:		sam@massiveblue.com
+website:	http://www.massiveblue.com
+/*-------------------------------------------------------------------- */
+
+/* Global Styles */
+/* Border Box All Things */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+html { font-size: 62.5%; }
+body { background: #f2f2f2;
+	   color: #333;
+	   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	   text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	   font-size: 16px;
+	   font-size: 1.6rem; }
+
+/* Fluid Grid Setup */
+.row-fluid { width: 100%; }
+.row-fluid:before, .row-fluid:after { display: table; line-height: 0; content: ""; }
+.row-fluid:after { clear: both; }
+.row-fluid [class*="span"] { display: block; float: left; width: 100%; margin-left: 2.127659574468085%; }
+.row-fluid [class*="span"]:first-child { margin-left: 0; }
+.row-fluid .span12 { width: 100%; }
+.row-fluid .span11 { width: 91.48936170212765%; }
+.row-fluid .span10 { width: 82.97872340425532%; }
+.row-fluid .span9 { width: 74.46808510638297%; }
+.row-fluid .span8 { width: 65.95744680851064%; }
+.row-fluid .span7 { width: 57.44680851063829%; }
+.row-fluid .span6 { width: 48.93617021276595%; }
+.row-fluid .span5 { width: 40.42553191489362%; }
+.row-fluid .span4 { width: 31.914893617021278%; }
+.row-fluid .span3 { width: 23.404255319148934%; }
+.row-fluid .span2 { width: 14.893617021276595%; }
+.row-fluid .span1 { width: 6.382978723404255%; }
+
+/* !Fixers */
+/*-------------------------------------------------------------------- */
+* a {position: relative;} /* Gets links displaying over a PNG background */
+a {outline: none;} /* Gets rid of Firefox's dotted borders */
+table {border-collapse: collapse; border-spacing: 0;}
+q:before, q:after {content: '';}
+img { max-width: 100%; }
+
+/* !Base Elements */
+/*-------------------------------------------------------------------- */
+a, a:link, a:visited {color: #5096dd; text-decoration: none;}
+a:hover {color: #474747; text-decoration: underline;}
+a:active {color: #777;}
+abbr, acronym {font-style: normal; border-bottom: dotted 1px #666; cursor: help;}
+code {font: 1.1em monaco, courier, monospace;}
+h2 {font-size: 24px;}
+h3 {
+	color: #c3b160;
+	font: normal 24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h4 {color: #474747; font-size: 17px; margin-bottom: 10px;}
+hr {border: none; height: 1px; background: #eee; margin: 2em 1em 2em 0 ;
+}
+
+#container {
+	background: #ffffff;
+}
+
+/* !Masthead */
+/*-------------------------------------------------------------------- */
+#masthead {
+	background: #2d2d2d;
+	color: #ffffff;
+	font-size: 0.75em;
+	font-weight: bold;
+}
+#masthead-inner {
+	margin: 0 auto;
+}
+	#masthead-inner a {color: #d6ca92; text-decoration: none;}
+	#masthead-inner a:hover {color: #fff;}
+	#masthead-inner a:active {color: #ccc;}
+	
+	#masthead ul {
+		list-style: none;
+	}
+	#masthead ul li {
+		display: inline;
+	}
+/* Top Nav */
+	ul.nav li {
+		margin-right: 5%;
+	}
+	ul.nav li.on a {color: #ccc;}
+	ul.nav li.on a:hover {color: #fff;}
+	
+/* Contact Details */
+	ul.span6.quickcontact {
+		margin-left: 0;
+	}
+	ul.quickcontact {
+		text-align: right;
+	}
+	ul.quickcontact li {
+		color: #ccc;
+	}
+	ul.quickcontact li:last-child {
+		margin-left: 5%;
+		margin-right: 2.127659574468085%;
+	}
+
+/* Logo */
+/*-------------------------------------------------------------------- */
+#homepage #logo {
+	display: block;
+	margin: 0 auto;
+}
+
+#homepage h2 {
+	color: #474747;
+	letter-spacing: -1px;
+	line-height: 125%;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: normal;
+}
+
+#sub-page #logo {
+	float: left;
+	max-width: 35%;
+	padding-bottom: 30px;
+	padding-left: 15px;
+}
+
+#sub-page h2 {
+	font-size: 16px;
+	float: right;
+	top: 25px;
+	position: relative;
+	margin-right: 20px;
+}
+
+/* Menu */
+/*-------------------------------------------------------------------- */
+
+.menu {border: none; margin: 0;}
+
+.menu {
+	border-top: 5px solid #f0f0f2;
+	border-bottom: 5px solid #f0f0f2;
+	font-weight: bold;
+	line-height: 175%;
+	padding-bottom:  25px;
+}
+	.menu ul {
+		list-style: none;
+		margin: 10px 0 0;
+	}
+	.menu ul li {
+		border-bottom: 1px solid #f7f7f8;
+		text-indent: 10px
+	}
+	.menu ul li a {display: block;}
+	.menu ul li.on a {color: #474747;}
+
+/* Contact Details */
+/*-------------------------------------------------------------------- */
+	
+.contactdetails {
+	background: #f7f7f8;
+	font-size: 13px;
+	margin-bottom: 25px;
+	padding: 7%;
+	line-height: 150%;
+}
+.contactdetails {
+	margin-top: 20px;
+	margin-left:  5% ;
+
+}
+.contactdetails > div {
+	margin-bottom: 1em;
+}
+.contactdetails .adr span {
+	display: block;
+}
+.contactdetails .tel strong:after {
+	content: ":";
+}
+
+/* Policy PDF */
+/*-------------------------------------------------------------------- */
+
+#policypdf {
+	background: url('../img/pdf.gif') left no-repeat;
+	padding-left: 6%;
+	font-weight: bold;
+	margin-left: 5%;
+}
+	#policypdf p {line-height: 125%; margin: 0;}
+	#policypdf strong {
+		color: #999;
+		font-size: 11px;
+	}
+	#gplus {
+		margin-left: 5%;
+	}
+	
+/* Offer */
+/*-------------------------------------------------------------------- */
+
+.offer {
+	background: url('../img/specoffer-city.jpg') no-repeat;
+	background-position-y: bottom;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-height:  233px;
+	margin-right: 2.127659574468085%;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.offer h3 {
+	padding: 4%;
+	margin: 0;
+}
+
+.offer h3 {
+	color: #474747;
+	font-size: 21px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	line-height: 125%;
+	text-shadow: #fff 0 1px 0;
+}
+.offer h3 strong {color: #64a934;}
+
+.quote a:link {
+	background: #f36130 url('../img/getaquote-red.jpg') top left no-repeat;
+	display: inline-block;
+	position: relative;
+	left: 32%;
+	top: -15px;
+	width: 226px;
+	text-indent: -9999px;
+	height: 41px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	border-radius: 8px;
+}
+.quote a:hover {background: url('../img/getaquote-red.jpg') left no-repeat;}
+.quote a:active {background: url('../img/getaquote-red.jpg') bottom left no-repeat;}
+
+p#restrictions {
+	font-size: 11px;
+	letter-spacing: normal;
+	position: relative;
+	margin: 0;
+	bottom: -30px;
+	left: 25px;
+}
+p#restrictions a {
+	color: #fff;
+	text-shadow: #64a934 0 1px 0;
+}
+
+/* Subpage Special Offer */
+.offersub {
+	background: #f4f2db url('../img/specoffer-subpage.jpg') repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	margin-bottom: 25px;
+	min-height: 80px;
+	margin-right: 2%;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+}
+	.offersub h1 {
+		color: #474747;
+		font-size: 17px;
+		font-weight: bold;
+		line-height: 46px;
+		text-shadow: #fff 0 1px 0;
+		float: left;
+		margin: 3% 0 0 2%;
+	}
+	
+	#getaquote a {
+		float: right;
+		background: url('../img/getaquote.jpg') top left no-repeat;
+		width: 226px;
+		height: 46px;
+		text-indent: -99999px;
+		margin-right: 2%;
+		top: 17px;
+	}
+	#getaquote a:hover {background: url('../img/getaquote.jpg') left no-repeat;}
+	#getaquote a:active {background: url('../img/getaquote.jpg') bottom left no-repeat;}
+	
+#unavailable-policy {
+	float: none;
+	margin-top: 0;
+	text-align: center;
+	position: relative;
+	top: 17px;
+	font-size: 22px !important;
+}
+	.clear {
+		clear: both;
+	}
+
+/* !Content */
+/*-------------------------------------------------------------------- */
+
+.content {
+	padding-bottom: 10px;
+	line-height: 150%;
+}
+	.content p {
+		margin-right: 5%;
+	}
+	.content ul {
+		list-style: url('../img/bullet.gif') disc;
+	}
+	
+.banner-one, .banner-two, .banner-three {
+	background-color: #f4f2db;
+	margin-bottom: 20px;
+}
+
+.banner-one h3, .banner-two h3, .banner-three h3 {
+    color: #474747;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 125%;
+	text-shadow: #fff 0 1px 0;
+}
+	
+.banner-one h3 strong, .banner-two h3 strong, .banner-three h3 strong {
+	color: #64a934;
+}
+.banner-one a, .banner-two a, .banner-three a {color: #474747;}
+.banner-one a:hover, .banner-two a:hover, .banner-three a:hover {color: #64a934; text-decoration: none;}
+.banner-one {
+	background: url('../img/marks.jpg') no-repeat;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	height: 75px;
+	position: relative;
+	margin-top: 25px;
+	margin-right: 2.127659574468085%;
+}
+	.banner-one h3 {
+		left: 33%;		
+		position: absolute;
+		top: -8px;
+	}
+	.banner-one p {
+		margin-left: 33%;
+		padding-top: 40px;
+		font-size: 15px;
+	}
+	
+.banner-two {
+	height: 150px;
+	margin-left: 0 !important;
+	background: url('../img/buy-online.jpg') no-repeat;
+	background-position-x: right;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	width: 47.53617021276595% !important;
+}
+	.banner-two h3 {padding: 0 0 0 10%; margin-top: 20px;}
+	
+.banner-three {
+	height: 150px;
+	float: right !important;
+	background: url('../img/quick-quote.jpg') no-repeat;
+	background-position-x: right;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 10px;
+	width: 47.53617021276595% !important;
+	margin-left: 0 !important;
+	margin-right: 2.127659574468085%;
+}
+	.banner-three h3 {padding: 0 0 0 10%;}
+
+
+/* Contact Form */
+#contactform label {
+    background: #f0;
+    display: block;
+    float: left;
+    font-weight: bold;
+    line-height: 225%;
+    text-indent: 25px;
+    width: 20%;
+}
+#contactform p {overflow: hidden;}
+#contactform #name,
+#contactform #customer_mail,
+#contactform #subject,
+#contactform #feedback {
+    background: #f7f7f8;
+    border: 2px solid #ddd;
+    float: left;
+    font: inherit;
+    outline: none;
+    padding: 5px;
+    width: 70%;
+}
+#contactform #feedback {
+    height: 75px;
+}
+#contactform #name:hover,
+#contactform #customer_mail:hover,
+#contactform #subject:hover,
+#contactform #feedback:hover {
+    border: 2px solid #ccc;
+}
+#contactform #name:focus,
+#contactform #customer_mail:focus,
+#contactform #subject:focus,
+#contactform #feedback:focus {
+	background: #fff;
+}
+
+#contact-thanks h2 {
+	    font-weight: bold;
+	    text-align: center;
+}
+	
+input.btn { 
+	color:#FFF; 
+	background: #474747;
+	padding: 5px;
+	border: 1px solid #333333;
+}
+input.btn:hover {
+	color: #d6ca92;
+}
+
+#payment-boxout {
+	background: #f7f7f8;
+	float: right;
+	text-align: center;
+	width: 40%;
+	padding: 3%;
+	margin: 2%;
+}
+	#payment-boxout h5 {margin-bottom: .5em; margin-top: 0;}
+	#payment-boxout img {margin-bottom: 0;}
+	#payment-boxout p {margin-bottom: 0; margin-right: 0;}
+	#payment-boxout p small {
+		color: #999;
+		font-size: 11px;
+		line-height: 0.75em;
+	}
+	#payment-boxout p.smallbtn a {
+		background: url('../img/getaquote-small.gif') top left no-repeat;
+		display: block;
+		height: 39px;
+		margin: 0 auto;
+		text-indent: -9999px;
+		width: 186px;
+	}
+	#payment-boxout p.smallbtn a:hover {background: url('../img/getaquote-small.gif') left no-repeat;}
+	#payment-boxout p.smallbtn a:active {background: url('../img/getaquote-small.gif') bottom left no-repeat;}
+
+
+/* !Footer */
+/*-------------------------------------------------------------------- */
+#footer-wrap {
+	background: #2d2d2d;
+	color: #ffffff;
+	padding-bottom: 30px;
+}
+.footer {
+	font-size: 12px;
+}
+.footer a {color: #ccc;}
+.footer a:hover {color: #fff;}
+.footer a:active {color: #ccc;}
+
+	.footer-sitemap h3 {
+		margin-left: 10%;
+	}
+	
+	.footer-sitemap h3 a:link, .footer-sitemap h3 a:visited {
+		color: #c3b160;
+		font: normal 24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+	.footer-sitemap ul {
+		line-height: 20px;
+		list-style: none;
+		margin: 0 0 0 10px;
+	}
+	.footer-sitemap ul li.on a {font-weight: bold;}
+	
+	.our-guarantee p {
+		color: #fff;
+		line-height: 20px;
+	}
+
+
+/* Shared styles for tablets and up */
+@media (min-width: 768px){
+	#container, #masthead-inner, .footer { position: relative; margin: 0 auto; padding: 0;}
+}
+
+/* Large desktop */
+@media (min-width: 960px) {
+	#container, #masthead-inner, .footer {
+		width: 960px;
+	}
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 959px) {
+	.menu {
+		font-size: 13px;
+	}
+	
+	#sub-page h2 {
+		font-size: 13px;
+	}
+	#sub-page h1 {
+		font-size: 13px;
+	}
+	.banner-one h3 {
+		font-size: 17px;
+		left: 39%;
+		top: 10px;
+	}
+	.banner-one p, #policypdf {
+		display: none;
+	}
+	.banner-two h3, .banner-three h3 {
+		font-size: 18px;
+	}
+	.offersub h1 {
+		margin-left: 1%;
+	}
+	#getaquote a {
+		margin-right: 1%;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	[class*="span"], .row-fluid [class*="span"] {
+		display: block;
+		float: none;
+		margin: 20px 2%;
+		width: 96%;
+	}
+	ul.nav {
+		text-align: center;
+	}
+	.content {
+		border-top: none;
+	}
+	.contactdetails, .banner-two, .banner-three, .footer-sitemap, .banner-one p, #policypdf, #payment-boxout, ul.span6.quickcontact, h2, #gplus {
+		display: none !important;
+	}
+	.content {
+		margin-top: 0 !important;
+		padding-bottom: 0;
+	}
+	.content p {
+		margin-right: 0;
+	}
+	.offer h3 {
+		padding: 4%;
+	}
+	.span4 {
+		width: 100% !important;
+	}
+	#sub-page #logo {
+		max-width: 50%;
+		margin: 0 auto;
+		display: block;
+		float: none;
+		padding: 0;
+	}
+	.offer, .banner-one {
+		margin-right: 0;
+	}
+	.banner-one {
+		background: #f4f2db url('../img/specoffer-subpage.jpg') repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+	}
+	.offersub {
+		min-height: 0;
+		margin-right: 0;
+	}
+	.offersub h1 {
+		float: none;
+		text-align: center;
+		margin-left: 0;
+		font-size: 20px;
+		padding-top: 1%;
+	}
+	#getaquote a {
+		float: none;
+		margin: 0 auto;
+		display: block;
+		top: 0;
+		margin-top: 0px;
+	}
+	.banner-one h3 {
+		left: 0;
+		padding-top: 31px;
+		text-align: center !important;
+		position: relative;
+	}
+	.quote {
+		top: 2px;
+		padding: 1%;
+	}
+	
+	p#restrictions {
+		bottom: -40px;
+	}
+	#unavailable-policy {
+		top: 0;
+		padding: 1%;
+	}
+	
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.offer, #homepage .content p {
+		display: none !important;
+	}
+	.banner-one, .content h3 {
+		margin-top: 0 !important;
+	}
+	.banner-one h3 {
+		font-size: 18px;
+	}
+	#sub-page #logo, #homepage #logo {
+		max-width: 75%;
+		margin: 0 auto !important;
+		display: block;
+	}
+	#contactform #name,
+	#contactform #customer_mail,
+	#contactform #subject,
+	#contactform #feedback {
+	    width: 80%;
+	    margin-left: 10%;
+	}
+	input.btn { 
+		margin-left: 10%;
+	}
+	.quote {
+		width: 50%;
+	}
+	.offersub h1 {
+		font-size: 16px;
+	}
+
+}
